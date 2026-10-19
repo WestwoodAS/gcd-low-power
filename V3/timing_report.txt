@@ -1,0 +1,75 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : GCD
+Version: U-2022.12
+Date   : Tue Jun  2 11:18:47 2026
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: Controller/Current_State_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Controller/Current_State_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  GCD                tsmc090_wl10          slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Controller/Current_State_reg[0]/CK (DFFRQX2)            0.00       0.00 r
+  Controller/Current_State_reg[0]/Q (DFFRQX2)             0.36       0.36 f
+  Controller/U6/Y (INVX2)                                 0.41       0.77 r
+  Controller/U5/Y (XNOR2X1)                               0.47       1.24 f
+  Controller/U7/Y (NOR2X2)                                0.34       1.58 r
+  Controller/M3_sel (Controller)                          0.00       1.58 r
+  Datapath/M3_sel (Datapath)                              0.00       1.58 r
+  Datapath/M3/S (MUX2_1)                                  0.00       1.58 r
+  Datapath/M3/U2/Y (BUFX2)                                0.47       2.06 r
+  Datapath/M3/U1/Y (INVX2)                                0.41       2.47 f
+  Datapath/M3/U3/Y (AO22X2)                               0.31       2.78 f
+  Datapath/M3/Y[0] (MUX2_1)                               0.00       2.78 f
+  Datapath/FU2/B[0] (Compare)                             0.00       2.78 f
+  Datapath/FU2/U19/Y (NOR2BX1)                            0.23       3.01 f
+  Datapath/FU2/U20/Y (OAI2BB1X1)                          0.26       3.27 f
+  Datapath/FU2/U21/Y (OAI211XL)                           0.17       3.44 r
+  Datapath/FU2/U22/Y (OAI221X1)                           0.32       3.76 f
+  Datapath/FU2/U23/Y (AOI32XL)                            0.35       4.10 r
+  Datapath/FU2/U24/Y (OAI21X1)                            0.23       4.34 f
+  Datapath/FU2/U25/Y (AOI32XL)                            0.34       4.67 r
+  Datapath/FU2/U2/Y (INVX2)                               0.11       4.79 f
+  Datapath/FU2/U26/Y (AOI2BB2X1)                          0.32       5.10 r
+  Datapath/FU2/U29/Y (CLKNAND2X2)                         0.19       5.29 f
+  Datapath/FU2/U30/Y (NOR4BX1)                            0.41       5.70 r
+  Datapath/FU2/U1/Y (INVX2)                               0.12       5.83 f
+  Datapath/FU2/C_2 (Compare)                              0.00       5.83 f
+  Datapath/C_2 (Datapath)                                 0.00       5.83 f
+  Controller/C_2 (Controller)                             0.00       5.83 f
+  Controller/U13/Y (AOI2BB2X2)                            0.17       6.00 f
+  Controller/U12/Y (OAI211XL)                             0.17       6.17 r
+  Controller/Current_State_reg[0]/D (DFFRQX2)             0.00       6.17 r
+  data arrival time                                                  6.17
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  Controller/Current_State_reg[0]/CK (DFFRQX2)            0.00      10.00 r
+  library setup time                                     -0.21       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -6.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.62
+
+
+1

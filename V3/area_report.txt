@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : GCD
+Version: U-2022.12
+Date   : Tue Jun  2 11:18:47 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    slow (File: /cad/CBDK/CBDK_TSMC90GUTM_Arm_f1.0/CIC/SynopsysDC/db/slow.db)
+
+Number of ports:                          350
+Number of nets:                           634
+Number of cells:                          294
+Number of combinational cells:            232
+Number of sequential cells:                43
+Number of macros/black boxes:               0
+Number of buf/inv:                         54
+Number of references:                       2
+
+Combinational area:               1185.408012
+Buf/Inv area:                      121.363204
+Noncombinational area:             576.475201
+Macro/Black Box area:                0.000000
+Net Interconnect area:           36726.849640
+
+Total cell area:                  1761.883213
+Total area:                      38488.732853
+1
